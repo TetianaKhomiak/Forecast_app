@@ -1,5 +1,4 @@
 function displayWeatherData(response) {
-  console.log(response);
   let temperatureElement = document.querySelector("#current-temperature");
   let searchInputElement = document.querySelector("#search-input");
   let cityElement = document.querySelector("#current-city");
