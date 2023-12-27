@@ -1,3 +1,5 @@
+"use strict";
+
 function displayWeatherData(response) {
   let temperatureElement = document.querySelector("#current-temperature");
   let searchInputElement = document.querySelector("#search-input");
@@ -64,11 +66,11 @@ function getForecast(city) {
   axios(apiUrl).then(displayForecast);
 }
 
-function formatDay(timestamp) {
-  let date = new Date(timestamp * 1000);
+function formatDay(date) {
+  let day = new Date(date * 1000).getDay();
   let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 
-  return days[date.getDay()];
+  return days[day];
 }
 
 function displayForecast(response) {
