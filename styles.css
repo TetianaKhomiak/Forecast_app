@@ -96,6 +96,25 @@ footer {
     border-top: 1px solid #f9f7fe;
     text-align: center;
     padding-top: 15px;
-
     color: rgba(39, 33, 66, 0.4);
+}
+
+#forecast {
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    margin: 0 auto;
+    color: rgba(39, 33, 66, 0.4);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+}
+
+.weather-forecast-temperatures {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    color: #f65282;
+    margin: 0 auto;
 }
